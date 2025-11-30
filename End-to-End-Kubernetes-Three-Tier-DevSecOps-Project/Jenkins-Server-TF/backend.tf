@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "my-ews-baket1"
+    bucket         = "dev-aman-tf-bucket-1575"
     region         = "us-east-1"
     key            = "End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/Jenkins-Server-TF/terraform.tfstate"
     dynamodb_table = "Lock-Files"
@@ -13,4 +13,5 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
+
 }
