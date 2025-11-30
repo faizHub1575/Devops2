@@ -1,8 +1,8 @@
-terraform {
+sterraform {
   backend "s3" {
     bucket         = "dev-aman-tf-bucket-1575"
     region         = "us-east-1"
-    key            = "End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/Jenkins-Server-TF/terraform.tfstate"
+    key            = "Devops2/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/Jenkins-Server-TF/terraform.tfstate"
     dynamodb_table = "Lock-Files"
     encrypt        = true
   }
@@ -15,3 +15,4 @@ terraform {
   }
 
 }
+
